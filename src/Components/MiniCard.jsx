@@ -1,9 +1,7 @@
+import "../assets/css/components/miniCard.css";
+import WeatherCard from "./WeatherCard";
 function MiniCard() {
-  return (
-    <>
-      <h1>hagsfdhgsa</h1>
-    </>
-  );
+  return <></>;
 }
 
 export default MiniCard;

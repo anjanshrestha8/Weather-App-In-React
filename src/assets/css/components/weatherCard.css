@@ -1,0 +1,53 @@
+.card-wrapper {
+  border: none;
+  border-radius: 6px;
+}
+
+.header {
+  background-color: whitesmoke;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-part {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-part > input {
+  height: 2rem;
+  padding: 11px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid black;
+  outline: none;
+}
+
+.search-icon {
+  height: 30px;
+}
+
+/* weather-section */
+
+.weather-section-wrapper {
+  margin-top: 3rem;
+  background-color: red;
+  padding: 1rem;
+}
+.weather-section-wrapper > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.weather-section-wrapper > div:first-child > h1 {
+  font: bolder;
+  color: white;
+  font-size: 3rem;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
