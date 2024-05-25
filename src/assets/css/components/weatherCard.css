@@ -37,7 +37,7 @@
   padding: 1rem;
 }
 .weather-section-wrapper > div:first-child {
-  display: flex;
+  display: flex;9
   align-items: center;
   gap: 3rem;
 }
