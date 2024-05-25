@@ -1,0 +1,5 @@
+.background-image {
+  height: 100vh;
+  /* opacity: 70%; */
+  filter: blur(90%);
+}

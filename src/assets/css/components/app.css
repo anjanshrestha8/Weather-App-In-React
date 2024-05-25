@@ -1,0 +1,13 @@
+.main-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
