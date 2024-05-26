@@ -4,6 +4,17 @@ import "./assets/css/components/app.css";
 import clear from "./assets/images/Clear.jpg";
 
 function App() {
+  fetch(
+    "meteosource.com/api/v1/free/point?place_id=london&sections=all&timezone=UTC&language=en&units=metric&key=b09f59chilzh0v05a7kiql6rjpt5lzvgmjfwcwl8"
+  )
+    .then((response) => {
+      console.log(response);
+
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    });
   return (
     <>
       <main className="main-wrapper">
