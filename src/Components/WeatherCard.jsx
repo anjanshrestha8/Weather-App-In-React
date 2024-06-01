@@ -1,47 +1,50 @@
 import "../assets/css/components/weatherCard.css";
-import search from "../assets/icons/search.svg";
-import sun from "../assets/icons/sun.png";
+import one from "../assets/icons/1.png";
+import two from "../assets/icons/2.png";
+import thirteen from "../assets/icons/13.png";
+
 function WeatherCard(props) {
   return (
     <>
       <div className="card-wrapper">
-        {/* Header section */}
-        <div className="header">
-          <h1>Weather Of Kathmandu</h1>
-          <div className="search-part">
-            <input type="search" placeholder="Search location here..." />
-            <div className="search-icon">
-              <img src={search} alt="" />
-            </div>
-          </div>
-        </div>
         {/* weather section */}
         <div className="weather-section-wrapper">
           <div className="icon-section">
             <div className="icon">
-              <img src={sun} alt="" />
+              <img src={thirteen} alt="" />
             </div>
-            <h1>Max - Temperature</h1>
+            <div>
+              <h1>
+                Max-Temperature : <span> {props.maxTemp}</span>
+              </h1>
+              <h1>
+                Min-Temperature : <span> {props.minTemp}</span>
+              </h1>
+            </div>
           </div>
-          <hr />
+
+          {/* <hr />   */}
+
           <div className="location-section">
             <h1>Location: Kathmandu</h1>
+            <br />
+            <br />
             <div className="details">
-              <h3>Day: Sunday</h3>
-              <h3>Date: 2002/08/02</h3>
+              <h3>Date: {props.date}</h3>
+              <h3>Weather: "{props.weather}"</h3>
             </div>
           </div>
-          <hr />
+
           <div className="button-section">
             <label className="button-wind">
-              Wind Speed: <br /> 25km/s
+              Wind Speed: <br /> {props.windSpeed}
             </label>
-
             <label className="button-humidity">
-              Humidity : <br /> 48.7gm/m3
+              Average Temp : <br />
+              {props.temp}
             </label>
           </div>
-          <div className="end-section">e</div>
+          <div className="end-section">"{props.summary}"</div>
         </div>
       </div>
     </>

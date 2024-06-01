@@ -1,0 +1,29 @@
+.card-wrapper {
+  border: none;
+  border-radius: 6px;
+}
+
+.header {
+  background-color: whitesmoke;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-part {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.search-part > input {
+  height: 2rem;
+  padding: 11px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid black;
+  outline: none;
+}
+
+.search-icon {
+  height: 30px;
+}
