@@ -1,9 +1,11 @@
 import "../assets/css/components/weatherCard.css";
 import one from "../assets/icons/1.png";
 import two from "../assets/icons/2.png";
-import thirteen from "../assets/icons/13.png";
+import tstorm from "../assets/icons/tstorm.png";
+import { weatherIcons } from "../utils/imageIcon";
 
 function WeatherCard(props) {
+  console.log(props);
   return (
     <>
       <div className="card-wrapper">
@@ -11,7 +13,7 @@ function WeatherCard(props) {
         <div className="weather-section-wrapper">
           <div className="icon-section">
             <div className="icon">
-              <img src={thirteen} alt="" />
+              <img src={weatherIcons[props.weather]} alt="" />
             </div>
             <div>
               <h1>
