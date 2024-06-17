@@ -28,7 +28,7 @@ function WeatherCard(props) {
           {/* <hr />   */}
 
           <div className="location-section">
-            <h1>Location: Kathmandu</h1>
+            <h1>Location: {props.placeId}</h1>
             <br />
             <br />
             <div className="details">

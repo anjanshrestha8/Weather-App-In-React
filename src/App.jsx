@@ -40,7 +40,7 @@ function App() {
         <div>Loading....</div>
       ) : (
         <main className="main-wrapper">
-          <Nav handleClick={handleSearchNewArea} />
+          <Nav handleClick={handleSearchNewArea} placeId={placeId} />
           <div className="card">
             <div className="weather-card">
               {weather?.day ? (
@@ -52,6 +52,7 @@ function App() {
                   maxTemp={weather.all_day.temperature_max + " °C"}
                   minTemp={weather.all_day.temperature_min + " °C"}
                   summary={weather.summary}
+                  placeId={placeId}
                 />
               ) : (
                 <div>Sorry, no data found.</div>

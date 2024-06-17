@@ -28,7 +28,7 @@ function Nav(props) {
   return (
     <>
       <div className="header">
-        <h1>Weather Of Kathmandu</h1>
+        <h1>Weather Of {props.placeId}</h1>
         <div className="search-part">
           <Select
             className="basic-single"
